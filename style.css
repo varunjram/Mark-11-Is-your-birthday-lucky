@@ -12,7 +12,7 @@ body {
 
     background-color: var(--primary-dark);
     color: var(--primary-green);
-    font:
+    /* font: */
 
 }
 
@@ -41,10 +41,18 @@ input {
 }
 
 #check-number {
-    margin-top: 1rem;
-    display: block;
-    margin: auto;
-    background-color: transparent0;
+  display: block;
+  margin: auto;
+  margin-top: 1rem;
+  background: transparent;
+  border: solid;
+  color: var(--prmary-green);
+  border-color: var(--prmary-green);
+  border-width: medium;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: large;
+  cursor: pointer;
 }
 
 footer {
@@ -73,4 +81,24 @@ footer {
   img {
     width: 40px;
     padding: 0.2rem;
+  }
+
+  .textstyling {
+
+    /* text-align: center; */
+    /* margin: auto; */
+    /* padding-left: 1rem; */
+  }
+
+  ul {
+
+    padding-inline-start:none
+    ;
+
+  }
+
+  #output-box {
+
+    text-align: center;
+    
   }
