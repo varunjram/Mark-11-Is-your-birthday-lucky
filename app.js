@@ -1,13 +1,11 @@
 const dateOfBirth = document.querySelector("#date-of-birth");
 const luckyNumber = document.querySelector("#lucky-number")
 const checkNumberButton = document.querySelector("#check-number");
-
-
 const outputBox =document.querySelector("#output-box")
 
 
-function compareValues(sum, luckyNumber) {
-    if (sum % luckyNumber.value === 0) {
+function compareValues(sum, numberToCheck) {
+    if (sum % numberToCheck === 0) {
 
         outputBox.innerText = "Your Birth-day is Lucky 😎!!!";
 
@@ -19,16 +17,15 @@ function compareValues(sum, luckyNumber) {
 
 }
 
-function checkBirthDateIsLucky() {
-
+function checkBirthDateIsLucky() { 
     const dob = dateOfBirth.value;
-
-    const sum = CalculateSum(dob);
-
-    compareValues(sum , luckyNumber.value)
-
-    console.log(sum);
-
+    const numberToCheck = luckyNumber.value;
+    if(dob && numberToCheck) {
+        const sum = CalculateSum(dob)
+    compareValues(sum, numberToCheck)
+    } else {
+    outputBox.innerText = "Please enter both fields";
+    }
 }
 
 
