@@ -1,60 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Lucky Birthday | App </title>
-</head>
-<body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="style.css" />
+    <title>Lucky Birthday | App</title>
+  </head>
+  <body>
     <h1>Is your birthday lucky ? |🤩</h1>
 
     <div class="container">
+      <label for="date-of-birth">Date of Birth</label>
+      <input
+        type="date"
+        id="date-of-birth" />
 
-        <label for="date-of-birth">Date of Birth</label>
-        <input type="date" id="date-of-birth">
+      <label for="lucky-number">Lucky Number</label>
+      <input
+        type="number"
+        id="lucky-number" />
 
-        <label for="lucky-number" >Lucky Number</label>
-        <input type="number" id="lucky-number">
+      <button id="check-number">Check Number</button>
 
-        <button id="check-number">Check Number</button>
-
-        <p id="output-box" disabled></p>
+      <p
+        id="output-box"
+        disabled></p>
     </div>
 
     <footer>
-        <p class="textstyling">VJ | 2022 | NuDeveloper</p>
-        <ul class="footer-list">
-          <li>
-            <a class="links" href="https://github.com/varunjram" target="_blank">
-              <img src="images/github.svg" alt="github" />
-            </a>
-          </li>
-          <li>
-            <a class="links" href="https://www.linkedin.com/in/vjram66/" target="_blank">
-              <img src="images/linkedin.svg" alt="Linkdin" />
-            </a>
-          </li>
-          <li>
-            <a class="links" href="https://twitter.com/66Varun" target="_blank">
-              <img src="images/twitter.svg" alt="twitter" />
-            </a>
-          </li>
-          <li>
-            <a
-              class="links"
-              href="https://www.instagram.com/varun_jram/"
-              target="_blank"
-            >
-              <img src="images/instagram.svg" alt="instagram" />
-            </a>
-          </li>
-        </ul>
-      </footer>
+      <p class="textstyling">VJ | 2022 | NuDeveloper</p>
+      <ul class="footer-list">
+        <li>
+          <a
+            class="links"
+            href="https://github.com/varunjram"
+            target="_blank">
+            <img
+              src="images/github.svg"
+              alt="github" />
+          </a>
+        </li>
+        <li>
+          <a
+            class="links"
+            href="https://www.linkedin.com/in/vjram66/"
+            target="_blank">
+            <img
+              src="images/linkedin.svg"
+              alt="Linkdin" />
+          </a>
+        </li>
+        <li>
+          <a
+            class="links"
+            href="https://twitter.com/66Varun"
+            target="_blank">
+            <img
+              src="images/twitter.svg"
+              alt="twitter" />
+          </a>
+        </li>
+        <li>
+          <a
+            class="links"
+            href="https://www.instagram.com/varun_jram/"
+            target="_blank">
+            <img
+              src="images/instagram.svg"
+              alt="instagram" />
+          </a>
+        </li>
+      </ul>
+    </footer>
 
     <script src="app.js"></script>
-    
-</body>
+  </body>
 </html>
